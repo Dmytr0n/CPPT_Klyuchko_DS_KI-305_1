@@ -2,10 +2,12 @@ import struct
 import sys
 import math
 import os
+# функція запису результату в бінарний файл
 def write_bin(result):
     with open('MyFile.bin', 'wb') as f:
         f.write(struct.pack('f', result))
         f.close()
+# функція читання результату з бінарного файлу
 def read_bin():
     result = 0.0
     try:
@@ -18,10 +20,12 @@ def read_bin():
     except FileNotFoundError as e:
        print(e)
     return result
+# функція запису результату в текстовий файл
 def write_txt(result):
     with open('MyFile.txt', 'w') as f:
      f.write(str(result))
      f.close()
+# функція читання результату з текстового файлу
 def read_txt():
     result = 0.0
     try:
@@ -34,11 +38,12 @@ def read_txt():
     except FileNotFoundError as e:
            print(e)
     return result
+# функція обчислення заданого виразу
 def my_calc (x):
     rad = x * math.pi / 180
     y = math.sin(rad) / math.tan(4*rad)
     return y
-
+# основна програма
 if __name__ == "__main__":
     x = int(input("Введіть значення x:"))
     result = my_calc(x)
