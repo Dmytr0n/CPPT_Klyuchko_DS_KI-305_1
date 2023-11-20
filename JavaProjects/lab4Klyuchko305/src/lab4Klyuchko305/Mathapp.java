@@ -62,7 +62,7 @@ class CalcException extends Exception {
     }
 }
 /**
- * Class <code>Equations</code> implements method for ctg(8x)/x
+ * Class <code>calcEquations</code> implements method for  y=sin(x)/tg(4x)
  * expression
  * calculation
  * 
