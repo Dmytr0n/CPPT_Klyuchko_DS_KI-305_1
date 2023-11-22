@@ -33,7 +33,6 @@ public static void main(String[] args) throws FileNotFoundException {
         
         symbol = in.nextLine();
         
-        fout.print("символ-заповнювача: " + symbol +"\n");
         if (symbol.length() != 1)
         {
         	System.out.print("\nСимвол-заповнювач введено невірно.");
